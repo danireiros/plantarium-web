@@ -1,0 +1,115 @@
+.dossier {
+  width: min(1180px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 112px 0 80px;
+}
+
+.dossier-intro h1 {
+  margin: 0;
+  font-size: clamp(64px, 12vw, 132px);
+  font-weight: 900;
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+}
+
+.dossier-intro h1 span {
+  background: linear-gradient(105deg, var(--accent-from), var(--accent-mid) 52%, var(--accent-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lede {
+  max-width: 38rem;
+  margin: 18px 0 0;
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.shots {
+  display: grid;
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.shot {
+  margin: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #071018;
+  box-shadow: 0 18px 40px var(--glass-shadow);
+}
+
+.shot figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.shot-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.dossier-copy {
+  margin-top: 42px;
+}
+
+.dossier-copy article {
+  padding: 32px 32px 14px;
+}
+
+.dossier-copy h2 {
+  margin: 8px 0 8px;
+  font-size: clamp(22px, 3vw, 28px);
+  letter-spacing: -0.04em;
+}
+
+.dossier-copy p,
+.byline {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.byline a,
+.dossier-copy a {
+  color: inherit;
+}
+
+@media (min-width: 800px) {
+  .shot-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .dossier {
+    width: min(100% - 20px, 1180px);
+    padding-top: 96px;
+  }
+
+  .shot img {
+    border-radius: 16px;
+  }
+
+  .dossier-copy article {
+    padding: 22px 18px 8px;
+  }
+
+  .lede {
+    font-size: 22px;
+  }
+}

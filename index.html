@@ -20,6 +20,7 @@
     <link rel="icon" href="./logo.jpg">
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/notes.css">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"CreativeWork","name":"Plantarium","url":"https://plantarium.danielbarreiros.es/","description":"Cultivo genético en un mundo de celdas. Cada planta nace de un ADN que muta el color, la forma, los frutos y lo que necesita para vivir.","author":{"@id":"https://danielbarreiros.es/#person"},"creator":{"@id":"https://danielbarreiros.es/#person"},"isPartOf":{"@id":"https://danielbarreiros.es/#website"},"sameAs":["https://danielbarreiros.es/proyectos/plantarium"]}
     </script>
@@ -63,46 +64,44 @@
         </div>
       </header>
 
-      <main>
-        <section class="hero wrap" id="inicio">
+      <main class="dossier">
+        <header class="dossier-intro">
           <h1>Plant<span>arium.</span></h1>
-          <p class="hero-tagline">Cada semilla es un genoma.</p>
-          <div class="coming-block">
-            <div class="coming-slider" id="comingSlider" aria-roledescription="carrusel" aria-label="Capturas de Plantarium">
-              <button class="coming-nav coming-nav--prev" type="button" aria-label="Imagen anterior">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6 9 12l6 6"/></svg>
-              </button>
-              <div class="coming-viewport">
-                <img class="is-active" src="./media/dia.jpg" alt="Biodomo de día, con el botánico, la caja de semillas y la procesadora">
-                <img src="./media/noche.jpg" alt="El mismo biodomo de noche, con estrellas">
-                <img src="./media/linajes.jpg" alt="Plantas de distintos tiers, del blanco común al negro cósmico">
-                <img src="./media/menu.jpg" alt="Menú principal de Plantarium">
-              </div>
-              <button class="coming-nav coming-nav--next" type="button" aria-label="Imagen siguiente">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
-              </button>
-              <div class="coming-dots" id="comingDots"></div>
-            </div>
-            <div class="coming-gallery" id="comingGallery" role="list"></div>
-          </div>
-          <div class="hero-actions">
-            <a class="liquid-glass glass-white coming-cta" href="https://danielbarreiros.es/proyectos/plantarium">Notas</a>
+          <p class="lede">Cada semilla es un genoma. El color, la forma y los frutos salen de su ADN.</p>
+        </header>
+
+        <section class="shots" aria-label="Capturas de Plantarium">
+          <figure class="shot shot-lead">
+            <img src="./media/dia.jpg" width="1280" height="720" alt="Biodomo de día, con el botánico, la caja de semillas y la procesadora">
+            <figcaption>Día en el biodomo. La caja guarda las primeras semillas y, a su lado, la procesadora.</figcaption>
+          </figure>
+          <div class="shot-row">
+            <figure class="shot">
+              <img src="./media/noche.jpg" width="1280" height="720" alt="El biodomo de noche, con estrellas">
+              <figcaption>La noche dura cuatro minutos. El día, doce.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="./media/linajes.jpg" width="1280" height="720" alt="Plantas de distintos tiers, del blanco común al negro cósmico">
+              <figcaption>Tronco, ramas, hojas y frutos eligen su rareza por separado.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="./media/menu.jpg" width="1280" height="720" alt="Menú principal de Plantarium">
+              <figcaption>El prototipo abre en su propio menú, antes de entrar al cultivo.</figcaption>
+            </figure>
           </div>
         </section>
 
-        <section class="notes wrap" id="notas">
+        <section class="dossier-copy" id="notas">
           <article class="glass">
             <h2>Un cultivo de celdas</h2>
-            <p>Plantarium es un prototipo de PC en el que la tierra, el agua y las plantas están hechas de celdas. No hay un catálogo de especies: cada semilla guarda un ADN, y ese ADN decide el tamaño, el color, la forma, los frutos y cuánto aguanta sin agua.</p>
+            <p>La tierra, el agua y las plantas están hechas de celdas. No hay un catálogo de especies: cada semilla guarda un ADN, y ese ADN decide el tamaño, el color, la forma, los frutos y cuánto aguanta sin agua.</p>
             <h2>El botánico</h2>
-            <p>El jugador es una esfera negra de humo, con ojos blancos y sin piernas. Vuela siempre: <strong>A</strong> y <strong>D</strong> lo mueven de lado, <strong>W</strong> y <strong>S</strong> cambian la altura, y si no se pulsa nada se queda suspendido. La roca y la tierra lo detienen; la arena, el sustrato y los líquidos lo atraviesan.</p>
+            <p>Es una esfera negra de humo, con ojos blancos y sin piernas. Vuela siempre. <strong>A</strong> y <strong>D</strong> lo mueven de lado, <strong>W</strong> y <strong>S</strong> cambian la altura, y si no se pulsa nada se queda suspendido. La roca y la tierra lo detienen. La arena, el sustrato y los líquidos lo atraviesan.</p>
             <h2>Herramientas</h2>
-            <p>El pico excava un área de 5×5 y guarda los bloques. El mismo tamaño sirve para volver a colocarlos. La hoz tala el tronco y convierte la planta en sustrato. Las tijeras sueltan solo las hojas. La mano cosecha los frutos. La manguera moja la tierra por dentro, y el cubo aporta nutrientes a la vez. El clic se puede mantener.</p>
-            <h2>Linajes</h2>
-            <p>El genoma ocupa 1040 bits. Tronco, ramas, hojas y frutos calculan su rareza por separado: el blanco común es lo habitual y una legendaria, o una mítica, sale muy poco. Al crecer, la planta da entre uno y varios frutos. Esos frutos no se plantan: se meten en la procesadora, al lado de la caja, y vuelven convertidos en semillas nuevas.</p>
-            <h2>Lo que necesita una planta</h2>
-            <p>Para crecer tiene que seguir en tierra con sustrato y humedad. El agua empapa también el interior del suelo, no solo la superficie. Si el ADN marca que lleva demasiado tiempo seca, la planta deja de crecer y puede morir. El día dura 12 minutos y la noche 4.</p>
-            <p class="byline">Un proyecto de <a href="https://danielbarreiros.es/">Daniel Barreiros</a> · <a href="https://danielbarreiros.es/proyectos/plantarium">Notas</a></p>
+            <p>El pico excava un área de 5×5 y guarda los bloques. El mismo tamaño sirve para volver a colocarlos. La hoz tala el tronco y convierte la planta en sustrato. Las tijeras sueltan solo las hojas. La mano cosecha los frutos. La manguera moja la tierra por dentro y el cubo aporta nutrientes a la vez. El clic se puede mantener.</p>
+            <h2>Linajes y agua</h2>
+            <p>El genoma ocupa 1040 bits. Lo blanco y común es lo habitual. Una legendaria, o una mítica, sale muy poco. Para crecer, la planta tiene que seguir en tierra con sustrato y humedad. Si pasa demasiado tiempo seca, deja de crecer y puede morir. Los frutos no se plantan: se llevan a la procesadora y vuelven convertidos en semillas nuevas.</p>
+            <p class="byline">Un proyecto de <a href="https://danielbarreiros.es/">Daniel Barreiros</a> · <a href="https://danielbarreiros.es/proyectos/plantarium">Ficha</a></p>
           </article>
         </section>
       </main>
